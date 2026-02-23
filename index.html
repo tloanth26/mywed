@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Hồ sơ cá nhân</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #f3f6fb;
+    }
+
+    .wrapper {
+      display: flex;
+      padding: 30px;
+      gap: 30px;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 260px;
+      background: linear-gradient(180deg, #ffc107, #ff9800);
+      border-radius: 20px;
+      padding: 30px 20px;
+      color: white;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .sidebar h2 {
+      margin: 10px 0 5px;
+    }
+
+    .sidebar p {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    .menu {
+      margin-top: 30px;
+      text-align: left;
+    }
+
+    .menu div {
+      padding: 10px 0;
+      cursor: pointer;
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      flex: 1;
+    }
+
+    .status {
+      background: white;
+      padding: 15px 20px;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      color: #999;
+    }
+
+    .info-box {
+      background: linear-gradient(180deg, #ffd54f, #ffb300);
+      border-radius: 16px;
+      padding: 20px;
+      color: #333;
+      margin-bottom: 25px;
+    }
+
+    .info-box h3 {
+      margin-top: 0;
+      color: white;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      color: white;
+      font-size: 14px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .number {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .pink { color: #e91e63; }
+    .green { color: #00c853; }
+    .blue { color: #2196f3; }
+    .orange { color: #ff9800; }
+  </style>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <img src="avatar.jpg" class="avatar" alt="Avatar">
+      <h2>N</h2>tloanth26gmail.com</p>
+
+      <div class="menu">
+        <div>👤 Hồ sơ</div>
+        <div>🕒 Hoạt động gần đây</div>
+        <div>⚙️ Chỉnh sửa</div>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+      <div class="status">
+        Hôm nay bạn đang nghĩ gì?
+      </div>
+
+      <div class="info-box">
+        <h3>Thông tin cá nhân</h3>
+        <div class="info-grid">
+          <div>👤 Họ tên: Lê Thị Trà Loan </div>
+          <div>🎂 Sinh nhật: 26/06/2008</div>
+          <div>🌍 Quốc gia: Việt Nam</div>
+          <div>🎓 Nghề nghiệp: Học sinh</div>
+          <div>📞 Điện thoại: 0706035261</div>
+          <div>✉️ Email: tloanth26@gmail.com</div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <div class="number pink">35</div>
+          <p>Website Envato</p>
+        </div>
+
+        <div class="card">
+          <div class="number green">63</div>
+          <p>ThemeForest CMS</p>
+        </div>
+
+        <div class="card">
+          <div class="number blue">75</div>
+          <p>Portfolio VectorLab</p>
+        </div>
+
+        <div class="card">
+          <div class="number orange">50</div>
+          <p>Adobe Muse</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
